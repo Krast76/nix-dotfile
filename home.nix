@@ -11,7 +11,11 @@
 
  programs.git = {
    enable = true;
-    
+      settings = {
+        user.name = "Ludovic Logiou";
+        user.email = "ludovic.logiou@gmail.com";
+        init.defaultBranch = "main";
+      };    
     # Inclusions conditionnelles
     includes = [
       {
@@ -45,6 +49,7 @@
       }
     ];
  };
+
  programs.zsh = {
    enable = true;
    enableCompletion= true;
