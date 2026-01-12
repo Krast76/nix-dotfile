@@ -1,0 +1,15 @@
+firefox () {
+   open -a "/Applications/Firefox.app/" $1
+}
+
+# osascript -e 'display notification "hello world!"'
+# osascript -e 'display notification "hello world!" with title "title"'
+
+notif () {
+  if [[ $2 -eq "" ]]
+  then
+    osascript -e 'display notification $1 with title "Notif"'
+  else
+    osascript -e 'display notification $1 with title $2'
+  fi
+}

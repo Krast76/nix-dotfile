@@ -1,0 +1,3 @@
+findAS() {
+  whois -h whois.cymru.com " -v $2"
+}

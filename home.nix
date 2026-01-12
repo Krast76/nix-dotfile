@@ -5,10 +5,8 @@
  home.homeDirectory = "/Users/Ludo";
  home.username = "Ludo";
 
- home.file.".bash_functions/kubeconfigctl".text = ''
-     function kubeconfigctl() {
-     }
-     '';
+ home.file.".bash_functions/kubeconfigctl".source = .bash_functions/kubeconfigctl;
+
  programs.gpg = {
    enable = true;
  };

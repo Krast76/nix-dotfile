@@ -1,0 +1,8 @@
+function osctx() {
+   if ! command -v yq &> /dev/null
+   then
+      echo "Command yq needed"
+      exit 1
+   fi
+   export OS_CLOUD=$(yq -r '.clouds[]|key' ~/.config/openstack/clouds.yaml | fzf)
+}

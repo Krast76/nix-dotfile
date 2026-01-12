@@ -1,0 +1,18 @@
+
+if  which kubectl > /dev/null 2>&1
+then
+	source <(kubectl completion zsh)
+fi
+
+function k8s_decode_secret {
+    kubectl get secret $@ -o json | jq '.data | map_values(@base64d)'
+}
+
+function k8s_list_ct_pod {
+    kubectl get pod $@ -o jsonpath='{.spec.containers[*].name}'; echo -e
+}
+
+function k8s_list_initct_pod {
+    kubectl get pod $@ -o jsonpath='{.spec.initContainers[*].name}'; echo -e
+}
+

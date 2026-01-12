@@ -1,0 +1,11 @@
+function load_proxy_ats_c5 {
+   export http_proxy=http://10.111.0.10:2001
+   export https_proxy=$http_proxy
+   export no_proxy=*.qwant.ninja,qwant.ninja
+}
+
+function unset_proxies {
+   unset http_proxy
+   unset https_proxy
+   unset no_proxy
+}
