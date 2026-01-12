@@ -72,4 +72,10 @@
      cat = "bat";
    };
  };
+
+ xdg = {
+   enable = true;
+
+   configFile."ghostty".source = .config/ghostty;
+ };
 }
