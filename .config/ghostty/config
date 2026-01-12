@@ -1,0 +1,35 @@
+theme = Adventure
+# Fonts
+window-title-font-family = "Hack Nerd Font Mono Regular"
+font-family-italic = "Hack Nerd Font Mono Italic"
+font-family-bold-italic = "Hack Nerd Font Mono Bold Italic"
+
+# MacOS specific
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden
+#macos-option-as-alt = true
+
+#background-opacity = 0.96
+#background-blur-radius = 40
+unfocused-split-opacity = 0.35
+unfocused-split-fill = 71706f
+window-inherit-working-directory = true
+window-colorspace = "display-p3"
+working-directory = home
+
+# Global binding
+keybind = cmd+s>r=reload_config 
+
+# Pane management
+keybind = cmd+s>d=new_split:right
+keybind = cmd+s>q=new_split:left
+keybind = cmd+s>z=new_split:up
+keybind = cmd+s>s=new_split:down
+keybind = cmd+s>enter=toggle_split_zoom
+
+# Table management
+keybind = cmd+s>n=new_tab
+keybind = cmd+s>l=previous_tab
+keybind = cmd+s>m=next_tab
+
+copy-on-select = clipboard
