@@ -6,6 +6,11 @@
  home.username = "Ludo";
 
  home.file.".bash_functions/kubeconfigctl".source = .bash_functions/kubeconfigctl;
+ home.file.".bash_functions/k8s".source = .bash_functions/k8s;
+ home.file.".bash_functions/macosx".source = .bash_functions/macosx;
+ home.file.".bash_functions/osctx".source = .bash_functions/osctx;
+ home.file.".bash_functions/utils".source = .bash_functions/utils;
+
 
  programs.gpg = {
    enable = true;
@@ -75,6 +80,11 @@
      k = "kubectl";
      kubectl = "kubecolor";
    };
+   initExtra = ''
+     for FILE in ${HOME}/.bash_functions/*; do 
+         source $FILE;
+     done
+   '';
  };
 
  xdg = {
