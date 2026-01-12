@@ -25,6 +25,8 @@
           ansible
           awscli2
           coreutils-full
+          openstackclient-full
+          kubecolor
           curl
 	  uv
           go
