@@ -80,8 +80,8 @@
      k = "kubectl";
      kubectl = "kubecolor";
    };
-   initExtra = ''
-     for FILE in ${HOME}/.bash_functions/*; do 
+   initContent = ''
+     for FILE in ''${HOME}/.bash_functions/*; do 
          source $FILE;
      done
    '';
