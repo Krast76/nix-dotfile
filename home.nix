@@ -5,6 +5,10 @@
  home.homeDirectory = "/Users/Ludo";
  home.username = "Ludo";
 
+ home.file.".bash_functions/kubeconfigctl".text = ''
+     function kubeconfigctl() {
+     }
+     '';
  programs.gpg = {
    enable = true;
  };
@@ -70,6 +74,8 @@
      nrs = "sudo darwin-rebuild switch --flake ~/.config/nix";
      ls = "eza";
      cat = "bat";
+     k = "kubectl";
+     kubectl = "kubecolor";
    };
  };
 
