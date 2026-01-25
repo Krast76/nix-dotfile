@@ -61,6 +61,9 @@
    enable = true;
    enableCompletion= true;
    syntaxHighlighting.enable = true;
+   sessionVariables = {
+     EDITOR = "vim";
+   };
    oh-my-zsh = {
      enable = true;
      theme = "bira";
@@ -79,6 +82,7 @@
      cat = "bat";
      k = "kubectl";
      kubectl = "kubecolor";
+     vim = "nvim";
    };
    initContent = ''
      for FILE in ''${HOME}/.bash_functions/*; do 
@@ -86,6 +90,10 @@
      done
    '';
  };
+
+ programs.neovim = {
+   defaultEditor = true;
+};
 
  xdg = {
    enable = true;
