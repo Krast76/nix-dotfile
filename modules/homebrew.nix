@@ -5,7 +5,9 @@
       homebrew = {
         enable = true;
         taps = [ ];
-        brews = [ ];
+        brews = [ 
+          "terraform"
+         ];
         casks = [ 
           "calibre" 
           "discord" 
