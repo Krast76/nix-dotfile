@@ -7,6 +7,8 @@
         taps = [ ];
         brews = [ 
           "terraform"
+          "pinentry-mac"
+          "helm"
          ];
         casks = [ 
           "calibre" 
@@ -25,6 +27,7 @@
           "vlc" 
           "wireshark-app" 
           "orbstack"
+          "google-chrome"
         ];
       };
 }
