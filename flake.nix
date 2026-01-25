@@ -19,6 +19,7 @@
         name = "Ludo";
         home = "/Users/Ludo";
       };
+      security.pam.services.sudo_local.touchIdAuth = true;
       environment.systemPackages =
         with pkgs; [ pkgs.vim
           neovim
@@ -33,6 +34,9 @@
           oh-my-zsh
           eza
           bat
+          kind
+          fzf
+          pass
         ];
 
       # Necessary for using flakes on this system.
@@ -52,6 +56,7 @@
 
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
+      nixpkgs.config.allowUnfree = true;
 
       system.defaults = {
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
@@ -59,9 +64,9 @@
         dock = {
           autohide = false;
           orientation = "bottom";
-          show-process-indicators = false;
+          show-process-indicators = true;
           show-recents = false;
-          static-only = true;
+          static-only = false;
           persistent-apps = [
             "/Applications/Firefox.app/"
             "/Applications/Slack.app/"
