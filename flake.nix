@@ -27,6 +27,8 @@
           awscli2
           coreutils-full
           openstackclient-full
+          kustomize
+          kubectx
           kubecolor
           curl
 	  uv
@@ -37,6 +39,8 @@
           kind
           fzf
           pass
+          yq
+          jq
         ];
 
       # Necessary for using flakes on this system.
@@ -68,9 +72,26 @@
           show-recents = false;
           static-only = false;
           persistent-apps = [
-            "/Applications/Firefox.app/"
-            "/Applications/Slack.app/"
-            "/Applications/Discord.app/"
+            {
+              app = "/Applications/Firefox.app/";
+            }
+            {
+              app = "/Applications/Ghostty.app/";
+            }
+            {
+              app = "/Applications/Slack.app/";
+            }
+            {
+              app = "/Applications/Discord.app/";
+            }
+            {
+              app = "/System/Applications/Music.app/";
+            }
+            {
+              spacer = {
+                small = true;
+              };
+            }
           ];
         };  
         finder = {
