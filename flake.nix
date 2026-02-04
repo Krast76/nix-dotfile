@@ -41,6 +41,9 @@
           pass
           yq
           jq
+	  gtop
+	  ipcalc
+	  rendercv
         ];
 
       # Necessary for using flakes on this system.
