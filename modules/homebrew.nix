@@ -5,13 +5,18 @@
       homebrew = {
         enable = true;
         taps = [ ];
+	onActivation = {
+	  autoUpdate = true;
+	  cleanup = "uninstall";
+	  upgrade = true;
+	};
         brews = [ 
           "terraform"
           "pinentry-mac"
           "helm"
          ];
         casks = [ 
-          "calibre" 
+	  "calibre"
           "discord" 
           "datagrip" 
           "firefox" 
@@ -28,6 +33,7 @@
           "wireshark-app" 
           "orbstack"
           "google-chrome"
+	  "whatsapp"
         ];
       };
 }
