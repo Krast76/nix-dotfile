@@ -33,3 +33,4 @@ keybind = cmd+s>l=previous_tab
 keybind = cmd+s>m=next_tab
 
 copy-on-select = clipboard
+
