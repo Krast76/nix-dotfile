@@ -44,6 +44,8 @@
 	  gtop
 	  ipcalc
 	  rendercv
+	  claude-code
+	  claude-monitor
         ];
 
       # Necessary for using flakes on this system.
