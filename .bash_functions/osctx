@@ -4,5 +4,5 @@ function osctx() {
       echo "Command yq needed"
       exit 1
    fi
-   export OS_CLOUD=$(yq -r '.clouds|keys.[]' ~/.config/openstack/clouds.yaml | fzf)
+   export OS_CLOUD=$(yq -r '.clouds|keys.[]' ~/.config/openstack/clouds.yaml|fzf)
 }
