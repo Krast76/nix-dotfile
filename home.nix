@@ -85,7 +85,8 @@
      vim = "nvim";
    };
    initContent = ''
-     for FILE in ''${HOME}/.bash_functions/*; do 
+     eval "$(/opt/homebrew/bin/brew shellenv)"
+     for FILE in ''${HOME}/.bash_functions/*; do
          source $FILE;
      done
    '';
