@@ -14,6 +14,7 @@
           "terraform"
           "pinentry-mac"
           "helm"
+	  "rtk"
          ];
         casks = [ 
 	  "calibre"
@@ -34,6 +35,7 @@
           "orbstack"
           "google-chrome"
 	  "whatsapp"
+	  "shadow"
         ];
       };
 }
