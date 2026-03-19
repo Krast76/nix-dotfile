@@ -31,7 +31,7 @@
           # Ou vous pouvez utiliser 'path' pour pointer vers un fichier
           user = {
             email = "l.logiou@qwant.com";
-            name = "Votre Nom Qwant";
+            name = "Ludovic Logiou";
           };
           # Ajoutez d'autres configurations spécifiques à Qwant
         };
