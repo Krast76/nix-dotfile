@@ -46,6 +46,8 @@
 	  rendercv
 	  claude-code
 	  claude-monitor
+	  cursor-cli
+	  mtr
         ];
 
       # Necessary for using flakes on this system.
