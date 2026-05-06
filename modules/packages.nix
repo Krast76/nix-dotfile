@@ -29,5 +29,7 @@
     claude-monitor
     cursor-cli
     mtr
+    go-task
+    screenfetch
   ];
 }

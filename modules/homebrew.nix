@@ -15,9 +15,11 @@
           "pinentry-mac"
           "helm"
 	  "rtk"
+	  "kubeseal"
          ];
         casks = [ 
 	  "calibre"
+	  "claude"
           "discord" 
           "datagrip" 
           "firefox" 
