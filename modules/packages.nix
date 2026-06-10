@@ -10,6 +10,7 @@
     openstackclient-full
     kustomize
     kubectx
+    typst
     kubecolor
     curl
     uv

@@ -9,6 +9,7 @@
 	  autoUpdate = true;
 	  cleanup = "uninstall";
 	  upgrade = true;
+	  extraFlags = [ "--force" ];
 	};
         brews = [ 
           "terraform"
