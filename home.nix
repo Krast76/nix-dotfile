@@ -100,5 +100,6 @@
    enable = true;
 
    configFile."ghostty".source = .config/ghostty;
+   configFile."opencode/opencode.json".source = .config/opencode/opencode.json;
  };
 }

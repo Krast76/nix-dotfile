@@ -8,6 +8,7 @@
 
   security.pam.services.sudo_local.touchIdAuth = true;
 
+  nix.package = pkgs.nixVersions.latest;
   nix.settings.experimental-features = "nix-command flakes";
 
   system.stateVersion = 6;

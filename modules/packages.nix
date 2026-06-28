@@ -32,5 +32,6 @@
     mtr
     go-task
     screenfetch
+    opencode
   ];
 }
